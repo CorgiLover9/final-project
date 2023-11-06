@@ -17,31 +17,29 @@ function setup() {
 
 function draw(){
   if (paused){
-    //do the fireworks
+    // do pause stuff
   } else {
-    //do the normal stuff
-  }
-  colorMode(RGB);
-  background(0, 0, 0, 25);
-  
-  if (random(1) < 0.04) {
-    fireworks.push(new Firework());
-  }
-  
-  for (let i = fireworks.length - 1; i >= 0; i--) {
-    fireworks[i].update();
-    fireworks[i].show();
-  
+    // do the normal stuff
+    colorMode(RGB);
+    background(0, 0, 0, 25);
     
-  function keyPressed(){
-  if (key === 'p')}
-    //pause the fireworks 
-    paused = true;
+    if (random(1) < 0.04) {
+      fireworks.push(new Firework());
+    }
+    
+    for (let i = fireworks.length - 1; i >= 0; i--) {
+      fireworks[i].update();
+      fireworks[i].show();
+      if (fireworks[i].done()) {
+        fireworks.splice(i, 1);
+      }
+    }
   }
 }
-    
-    if (fireworks[i].done()) {
-      fireworks.splice(i, 1);
-    }
+
+function keyPressed() {
+  if (key === 'p') {
+    //pause the fireworks 
+    paused = true;
   }
 }
