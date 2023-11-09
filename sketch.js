@@ -17,12 +17,22 @@ function setup() {
 
 function draw(){
   if (paused){
+    // do pause stuff
+    // Write the PAUSED message
+    console.log('PAUSED');
     textSize(100); 
-    text("PAUSED", 100, 150); 
-  } else {
-    background(0);
+    textAlign(CENTER< CENTER); 
+
+    const middleX = Width / 2;
+    const middleY = height / 2;
+
+    text('PAUSED', middleX, middleY);
   } else {
     // do the normal stuff
+    
+    
+    background(0);
+  } else {
     colorMode(RGB);
     background(0, 0, 0, 25);
     
