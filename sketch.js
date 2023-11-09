@@ -21,7 +21,7 @@ function draw(){
     // Write the PAUSED message
     console.log('PAUSED');
     textSize(100); 
-    textAlign(CENTER< CENTER); 
+    textAlign(CENTER, CENTER); 
 
     const middleX = Width / 2;
     const middleY = height / 2;
@@ -32,6 +32,7 @@ function draw(){
     
     
     background(0);
+  
   } else {
     colorMode(RGB);
     background(0, 0, 0, 25);
