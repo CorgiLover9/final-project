@@ -17,7 +17,10 @@ function setup() {
 
 function draw(){
   if (paused){
-    // do pause stuff
+    textSize(100); 
+    text("PAUSED", 100, 150); 
+  } else {
+    background(0);
   } else {
     // do the normal stuff
     colorMode(RGB);
