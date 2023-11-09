@@ -20,7 +20,7 @@ function draw(){
     // do pause stuff
     // Write the PAUSED message
     console.log('PAUSED');
-    textSize(100); 
+    textSize(height * 0.2); 
     textAlign(CENTER, CENTER); 
 
     const middleX = Width / 2;
