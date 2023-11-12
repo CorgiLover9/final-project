@@ -16,24 +16,19 @@ function setup() {
 }
 
 function draw(){
-  if (paused){
+  if (paused) {
     // do pause stuff
     // Write the PAUSED message
     console.log('PAUSED');
     textSize(height * 0.2); 
     textAlign(CENTER, CENTER); 
 
-    const middleX = Width / 2;
+    const middleX = width / 2;
     const middleY = height / 2;
 
     text('PAUSED', middleX, middleY);
   } else {
     // do the normal stuff
-    
-    
-    background(0);
-  
-  } if {
     colorMode(RGB);
     background(0, 0, 0, 25);
     
@@ -52,7 +47,7 @@ function draw(){
 }
 
 function keyPressed() {
-  else (key === 'p') {
+  if (key === 'p') {
     //pause the fireworks 
     paused = true;
   }
