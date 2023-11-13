@@ -49,8 +49,5 @@ function draw() {
 function keyPressed() {
   if (key === 'p') {
     paused = !paused;
-     //pause the fireworks 
-  } else {
-   paused = true;
   }
 }
