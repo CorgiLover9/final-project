@@ -32,7 +32,7 @@ function draw() {
     colorMode(RGB);
     background(0, 0, 0, 25);
     
-    if (random(1) < 0.04) {
+    (random(1) < 0.04) {
       fireworks.push(new Firework());
     }
     
