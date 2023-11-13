@@ -32,7 +32,7 @@ function draw() {
     colorMode(RGB);
     background(0, 0, 0, 25);
     
-    (random(1) < 0.04) {
+    if (random(1) < 0.04) {
       fireworks.push(new Firework());
     }
     
@@ -48,7 +48,7 @@ function draw() {
 
 function keyPressed() {
   if (key === 'p') {
-    paused = false;
+    paused = !paused;
      //pause the fireworks 
   } else {
    paused = true;
