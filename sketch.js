@@ -15,7 +15,7 @@ function setup() {
   background(0);
 }
 
-function draw(){
+function draw() {
   if (paused) {
     // do pause stuff
     // Write the PAUSED message
@@ -32,7 +32,7 @@ function draw(){
     colorMode(RGB);
     background(0, 0, 0, 25);
     
-    else (random(1) < 0.04) {
+    if (random(1) < 0.04) {
       fireworks.push(new Firework());
     }
     
