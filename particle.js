@@ -6,7 +6,7 @@ class Particle {
   constructor(x, y, hu, firework) {
     this.pos = createVector(x, y);
     this.firework = firework;
-    this.lifespan = 255;
+    this.lifespan = 270;
     this.hu = hu;
     this.acc = createVector(0, 0);
     if (this.firework) {
@@ -40,7 +40,7 @@ class Particle {
   }
 
   show() {
-    colorMode(HSB);
+    colorMode(0, 68, 255);
 
     if (!this.firework) {
       strokeWeight(2);
