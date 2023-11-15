@@ -6,7 +6,7 @@ class Particle {
   constructor(x, y, hu, firework) {
     this.pos = createVector(x, y);
     this.firework = firework;
-    this.lifespan = 270;
+    this.lifespan = 250;
     this.hu = hu;
     this.acc = createVector(0, 0);
     if (this.firework) {
@@ -43,10 +43,9 @@ class Particle {
     const COLORS =[ color (0, 68, 255),
                         (255, 0, 0),
                         (26, 255, 0),
-                        (204, 246, 200);
+                        (204, 246, 200)];
     let c = random(COLORS);
-    fill(c)
-    ];
+    stroke(c)
   }
 
     if (!this.firework) {
