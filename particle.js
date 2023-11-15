@@ -40,13 +40,14 @@ class Particle {
   }
 
   show() {
-    const COLOR = color (0, 68, 255),
+    const COLORS =[ color (0, 68, 255),
                         (255, 0, 0),
                         (26, 255, 0),
                         (204, 246, 200);
     let c = random(COLORS);
     fill(c)
-    
+    ];
+  }
 
     if (!this.firework) {
       strokeWeight(2);
