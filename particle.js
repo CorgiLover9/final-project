@@ -40,10 +40,7 @@ class Particle {
   }
 
   show() {
-    const COLORS =[  [0, 68, 255],
-                        [255, 0, 0],
-                      [26, 255, 0],
-                        [204, 246, 200]];
+    const COLORS = [240, 330, 0];
     let c = random(COLORS);
     stroke(c);
 
