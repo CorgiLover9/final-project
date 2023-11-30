@@ -40,10 +40,6 @@ class Particle {
   }
 
   show() {
-    const COLORS = [240, 330, 0];
-    let c = random(COLORS);
-    stroke(c);
-
     if (!this.firework) {
       strokeWeight(2);
       stroke(this.hu, 255, 255, this.lifespan);

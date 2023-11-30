@@ -2,9 +2,12 @@
 // http://codingtra.in
 // https://youtu.be/CKeyIbT3vXI
 
+const COLORS = [240, 330, 0];
 class Firework {
+  
   constructor() {
-    this.hu = random(255);
+    // Set the color to one of the pre-defined random colors
+    this.hu = random(COLORS);
     this.firework = new Particle(random(width), height, this.hu, true);
     this.exploded = false;
     this.particles = [];
