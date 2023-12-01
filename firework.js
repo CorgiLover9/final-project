@@ -2,7 +2,7 @@
 // http://codingtra.in
 // https://youtu.be/CKeyIbT3vXI
 
-const COLORS = [240, 330, 0, 108, 60];
+const COLORS = [240, 330, 0, 108, 60, 280, 168];
 class Firework {
   
   constructor() {
