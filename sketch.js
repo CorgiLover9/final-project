@@ -51,3 +51,19 @@ function keyPressed() {
     paused = !paused;
   }
 }
+
+function mouseMoved() {
+  console.log(`${mouseX}, ${mouseY}`);  
+  // prevent default
+  return false;
+}
+
+function mouseClicked() {
+  if (isMouseOverReset()) {
+    console.log('You clicked it!');
+    everythingButCreateCanvas();
+  } else {
+    console.log(`Clicked: ${mouseX}, ${mouseY}`);
+  }
+  return false;
+}
