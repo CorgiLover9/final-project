@@ -67,3 +67,9 @@ function mouseClicked() {
   }
   return false;
 }
+
+function keyPressed() {
+  if (keyCode == UP_ARROW){
+    this.firework.pos.y =  this.firework.pos.y - 10
+  }
+}
