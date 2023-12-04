@@ -59,11 +59,11 @@ function mouseMoved() {
 }
 
 function mouseClicked() {
-  if (isMouseOverReset()) {
-    console.log('You clicked it!');
-    everythingButCreateCanvas();
-  } else {
-    console.log(`Clicked: ${mouseX}, ${mouseY}`);
-  }
+  // Make a new firework at the mouse coordinates
+  let x = mouseX;
+  let y = mouseY;
+  let firework = new Firework(x, y);
+  // Add that firework to the list
+  fireworks.push(firework);
   return false;
 }

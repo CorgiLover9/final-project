@@ -5,10 +5,11 @@
 const COLORS = [240, 330, 0, 108, 60, 280, 168];
 class Firework {
   
-  constructor() {
+  // Set default values for x, y if the constructor is called without parameters
+  constructor(x = random(width), y = height) {
     // Set the color to one of the pre-defined random colors
     this.hu = random(COLORS);
-    this.firework = new Particle(random(width), height, this.hu, true);
+    this.firework = new Particle(x, y, this.hu, true);
     this.exploded = false;
     this.particles = [];
   }
