@@ -10,7 +10,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   colorMode(HSB);
   gravity = createVector(0, 0.12);
-  stroke(10);
+  stroke(8);
   strokeWeight(10);
   background(0);
 }
