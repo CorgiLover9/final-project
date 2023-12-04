@@ -9,7 +9,7 @@ var paused = false;
 function setup() {
   createCanvas(windowWidth, windowHeight);
   colorMode(HSB);
-  gravity = createVector(0, 0.2);
+  gravity = createVector(0, 0.12);
   stroke(255);
   strokeWeight(4);
   background(0);
